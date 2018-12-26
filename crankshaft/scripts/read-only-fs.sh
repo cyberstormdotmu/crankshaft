@@ -156,8 +156,8 @@ replace /usr/lib/tmpfiles.d/var.conf "spool\s*0755" "spool 1777"
 
 # Move dhcpd.resolv.conf to tmpfs
 touch /tmp/dhcpcd.resolv.conf
-echo "nameserver 8.8.8.8" > /tmp/dhcpcd.resolv.conf
-echo "nameserver 8.8.4.4" >> /tmp/dhcpcd.resolv.conf
+echo "nameserver 9.9.9.9" > /tmp/dhcpcd.resolv.conf
+echo "nameserver 149.112.112.112" >> /tmp/dhcpcd.resolv.conf
 rm /etc/resolv.conf
 ln -s /tmp/dhcpcd.resolv.conf /etc/resolv.conf
 
